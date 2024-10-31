@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamiento de Autos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Estacionamiento de Autos</h1>
+
+        <label for="placas">Placas:</label>
+        <input type="text" id="placas" placeholder="Ingrese placas del auto">
+        
+        <label for="propietario">Propietario:</label>
+        <input type="text" id="propietario" placeholder="Ingrese nombre del propietario">
+
+        <button id="entradaButton">Entrada de Auto</button>
+        <button id="salidaButton">Salida de Auto</button>
+
+        <h2>Número de autos en el estacionamiento: <span id="numeroAutos">0</span></h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Placas</th>
+                    <th>Propietario</th>
+                    <th>Hora de Entrada</th>
+                </tr>
+            </thead>
+            <tbody id="tablaAutos">
+                <!-- Las filas se añadirán aquí dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

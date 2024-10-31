@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Pintar Coches</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Juego Pintar Coches</h1>
+
+        <div id="carDisplay">
+            <img id="carImage" src="../carritoWhite.png" alt="Carrito" class="car">
+        </div>
+
+        <label for="colorSelect">Selecciona un color:</label>
+        <select id="colorSelect">
+            <option value="naranja">Naranja</option>
+            <option value="rojo">Rojo</option>
+            <option value="verde">Verde</option>
+            <option value="azul">Azul</option>
+            <option value="amarillo">Amarillo</option>
+        </select>
+
+        <button id="paintCarButton">Pintar Carro</button>
+
+        <h2>Número de coches pintados: <span id="carCount">0</span></h2>
+        <h2>Tiempo Total: <span id="totalTime">0</span> segundos</h2>
+
+        <div id="queueDisplay">
+            <h2>Cola de Atención:</h2>
+            <ul id="carQueue"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
